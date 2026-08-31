@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'llama-3.3-70b-versatile';
+const MODEL = 'openai/gpt-oss-120b';
 
 const systemPrompt = `You are LEETSIMPLE, an algorithm complexity assistant for LeetCode.
 
@@ -57,7 +57,7 @@ ${problemData.constraints}
                     { role: 'user', content: userMessage }
                 ],
                 temperature: 0.1,
-                max_tokens: 500,
+                max_tokens: 5000,
                 response_format: { type: 'json_object' }
             },
             {

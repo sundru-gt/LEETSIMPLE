@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "LEETSIMPLE",
+  "version": "1.0",
+  "description": "Analyze LeetCode problem complexity",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://leetcode.com/problems/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "*://leetcode.com/problems/*"
+  ]
+}

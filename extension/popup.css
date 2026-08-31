@@ -1,0 +1,112 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #ffa116;
+    /* LeetCode orange vibe */
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.status {
+    font-size: 13px;
+    color: #aaaaaa;
+    text-align: center;
+    min-height: 16px;
+}
+
+button {
+    background-color: #ffa116;
+    color: #121212;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ffb13b;
+}
+
+button:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #333333;
+    color: #777777;
+    cursor: not-allowed;
+}
+
+.secondary-btn {
+    background-color: #2a2a2a;
+    color: #dddddd;
+    padding: 10px 12px;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.secondary-btn:hover:not(:disabled) {
+    background-color: #3a3a3a;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.result-box {
+    background-color: #1e1e1e;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #ffa116;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.text-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #d4d4d4;
+    white-space: pre-wrap;
+}
